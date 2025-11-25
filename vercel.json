@@ -3,12 +3,6 @@
   "installCommand": "echo \"Dependencies handled inside build script\"",
   "buildCommand": "bash scripts/vercel_build.sh",
   "outputDirectory": "build/web",
-  "builds": [
-    {
-      "src": "build/web/**/*",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     { "handle": "filesystem" },
     {
